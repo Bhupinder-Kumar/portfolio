@@ -2,7 +2,7 @@ import { motion } from "framer-motion";
 import SectionHeader from "@/components/portfolio/SectionHeader";
 
 const facts = [
-  { k: "Years", v: "4+" },
+  { k: "Years", v: "5+" },
   { k: "LMS Modules", v: "8+" },
   { k: "Perf Gain", v: "35%" },
   { k: "SEO Boost", v: "40%" },

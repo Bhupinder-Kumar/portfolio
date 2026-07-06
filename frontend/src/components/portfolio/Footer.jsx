@@ -13,7 +13,7 @@ export default function Footer() {
               </h3>
             </a>
             <p className="mt-6 font-mono text-sm text-muted-foreground max-w-md">
-              Sr. Frontend Developer · 4+ years building React, TypeScript and Material-UI apps —
+              Sr. Frontend Developer · 5+ years building React, TypeScript and Material-UI apps —
               LMS platforms, dashboards, marketing sites and more. Based in Punjab, India.
             </p>
           </div>

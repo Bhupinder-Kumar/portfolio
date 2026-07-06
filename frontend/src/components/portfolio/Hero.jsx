@@ -73,7 +73,7 @@ export default function Hero() {
         >
           <div className="md:col-span-7">
             <p className="font-mono text-sm md:text-base leading-relaxed text-muted-foreground max-w-xl">
-              <span className="text-foreground">// Sr. Frontend Developer</span> with 4+ years shipping
+              <span className="text-foreground">// Sr. Frontend Developer</span> with 5+ years shipping
               React, TypeScript & Material-UI apps — LMS platforms, dashboards, PDF builders and
               pixel-perfect marketing sites.
             </p>
@@ -116,7 +116,7 @@ export default function Hero() {
           </div>
           <div className="hidden md:block md:col-span-3">
             <p className="font-mono text-[10px] uppercase tracking-[0.25em] text-muted-foreground mb-1">Experience</p>
-            <p className="font-mono text-sm">4+ yrs · LMS · Dashboards</p>
+            <p className="font-mono text-sm">5+ yrs · LMS · Dashboards</p>
           </div>
           <div className="md:col-span-3 flex items-center gap-3 md:justify-end">
             {[
@@ -141,12 +141,12 @@ export default function Hero() {
       </motion.div>
 
       {/* Scroll hint */}
-      <div className="hidden md:flex flex-col items-center gap-2 absolute bottom-8 right-10 z-10">
+      {/* <div className="hidden md:flex flex-col items-center gap-2 absolute bottom-8 right-10 z-10">
         <span className="font-mono text-[10px] uppercase tracking-[0.3em] text-muted-foreground">Scroll</span>
         <div className="w-px h-10 bg-muted-foreground/40 relative overflow-hidden">
           <div className="absolute top-0 left-0 w-px h-4 bg-accent animate-scroll-hint" />
         </div>
-      </div>
+      </div> */}
     </section>
   );
 }

@@ -4,6 +4,7 @@ import { Menu, X, Sun, Moon } from "lucide-react";
 import { useTheme } from "@/context/ThemeContext";
 
 const links = [
+  { href: "", label: "Home" },
   { href: "#about", label: "About" },
   { href: "#skills", label: "Skills" },
   { href: "#projects", label: "Work" },
@@ -48,7 +49,7 @@ export default function Navbar() {
               data-testid={`nav-link-${l.label.toLowerCase()}`}
               className="group relative font-mono text-xs uppercase tracking-[0.2em] hover:text-accent transition-colors"
             >
-              <span className="text-muted-foreground mr-1">0{i + 1}</span>
+              {/* <span className="text-muted-foreground mr-1">0{i + 1}</span> */}
               {l.label}
               <span className="absolute -bottom-1 left-0 w-0 h-px bg-accent transition-all duration-300 group-hover:w-full" />
             </a>
