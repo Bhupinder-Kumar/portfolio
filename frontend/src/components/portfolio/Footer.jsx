@@ -1,4 +1,4 @@
-import { Github, Linkedin, Twitter, Mail, ArrowUp } from "lucide-react";
+import { Github, Linkedin, Mail, ArrowUp, FileDown } from "lucide-react";
 
 export default function Footer() {
   const year = new Date().getFullYear();
@@ -13,8 +13,8 @@ export default function Footer() {
               </h3>
             </a>
             <p className="mt-6 font-mono text-sm text-muted-foreground max-w-md">
-              Frontend developer building fast, accessible, motion-rich web experiences. Always open to
-              coffee, collaboration and hard problems.
+              Sr. Frontend Developer · 4+ years building React, TypeScript and Material-UI apps —
+              LMS platforms, dashboards, marketing sites and more. Based in Punjab, India.
             </p>
           </div>
 
@@ -38,10 +38,10 @@ export default function Footer() {
                 Elsewhere
               </div>
               <ul className="space-y-2 font-mono text-sm">
-                <li><a href="https://github.com" target="_blank" rel="noreferrer" className="hover:text-accent inline-flex items-center gap-2"><Github size={12}/>GitHub</a></li>
-                <li><a href="https://linkedin.com" target="_blank" rel="noreferrer" className="hover:text-accent inline-flex items-center gap-2"><Linkedin size={12}/>LinkedIn</a></li>
-                <li><a href="https://twitter.com" target="_blank" rel="noreferrer" className="hover:text-accent inline-flex items-center gap-2"><Twitter size={12}/>Twitter</a></li>
-                <li><a href="mailto:hello@bhupinder.dev" className="hover:text-accent inline-flex items-center gap-2"><Mail size={12}/>Email</a></li>
+                <li><a href="https://github.com/Bhupinder-Kumar" target="_blank" rel="noreferrer" className="hover:text-accent inline-flex items-center gap-2"><Github size={12}/>GitHub</a></li>
+                <li><a href="https://www.linkedin.com/in/bhupinder-kumar-67b467178/" target="_blank" rel="noreferrer" className="hover:text-accent inline-flex items-center gap-2"><Linkedin size={12}/>LinkedIn</a></li>
+                <li><a href="mailto:bhupinderk0511@gmail.com" className="hover:text-accent inline-flex items-center gap-2"><Mail size={12}/>Email</a></li>
+                <li><a href="https://customer-assets.emergentagent.com/job_dev-interact-hub/artifacts/zct9cj6j_Bhupinder-dev-resume.pdf" target="_blank" rel="noreferrer" className="hover:text-accent inline-flex items-center gap-2"><FileDown size={12}/>Resume</a></li>
               </ul>
             </div>
           </div>

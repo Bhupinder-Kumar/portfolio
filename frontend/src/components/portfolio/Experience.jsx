@@ -3,30 +3,37 @@ import SectionHeader from "@/components/portfolio/SectionHeader";
 
 const timeline = [
   {
-    period: "2024 — Present",
-    role: "Freelance Frontend Developer",
-    org: "Independent",
+    period: "Jan 2023 — Present",
+    role: "Sr. Frontend Developer",
+    org: "Masters' Union (Venturepact) · Onsite",
     bullets: [
-      "Built and shipped landing pages, marketing sites and small SaaS dashboards for clients across construction, ed-tech and crypto.",
-      "Focused on performance (Lighthouse 95+), accessibility and cohesive motion.",
+      "Building the Learning Management System with React.js and Material-UI — attendance tracking, course management, session analytics, TV Mode and Capstone modules.",
+      "Shipped the LMS mobile app via Capacitor.js for iOS and Android, handling device-specific bugs for stable cross-platform performance.",
+      "Implemented a dynamic theme management system across LMS web + mobile, enabling flexible branding and dark/light modes.",
+      "Designed the Career Coach Student Dashboard, connecting learners with placement opportunities.",
+      "Currently building Reactive Resume — a React + TypeScript resume-builder for interactive, customisable CV creation.",
+      "Optimised performance 35% via lazy loading, code-splitting & memoization; built real-time analytics dashboards with ApexCharts.",
     ],
   },
   {
-    period: "2023 — 2024",
-    role: "React Developer",
-    org: "Contract engagements",
+    period: "May 2021 — Dec 2022",
+    role: "Web Designer / Frontend Developer",
+    org: "Outgrow (Venturepact) · Onsite",
     bullets: [
-      "Rebuilt legacy jQuery sites into componentised React apps with Redux Toolkit and Tailwind.",
-      "Introduced design tokens and a shared component library to speed up feature velocity.",
+      "Designed and optimised Outgrow's main website using PHP, Laravel and modern frontend frameworks.",
+      "Revamped the WordPress blog — improved UI consistency and cut page load time by 40%.",
+      "Built the frontend for a custom PDF Builder with dynamic form rendering for a smoother UX.",
+      "Developed Omniengage, a React-based engagement tool, from the ground up.",
+      "Improved SEO and accessibility standards across multiple products; mentored interns on CSS architecture and component-driven design.",
     ],
   },
   {
-    period: "2022 — 2023",
-    role: "Frontend Learner → Junior Dev",
-    org: "Self-taught / DevWithCode",
+    period: "May 2015 — Dec 2018",
+    role: "B.Sc. Computer Science",
+    org: "Guru Nanak Dev University, Punjab",
     bullets: [
-      "Built 15+ practice projects covering HTML/CSS layouts, JavaScript apps and React fundamentals.",
-      "Started publishing tutorials and demos to share the frontend learning journey.",
+      "Bachelor of Computer Science — foundations in algorithms, systems and web technologies.",
+      "Self-driven exploration of HTML, CSS, JavaScript and React through side projects and open-source builds.",
     ],
   },
 ];

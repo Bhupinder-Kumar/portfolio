@@ -4,19 +4,19 @@ import SectionHeader from "@/components/portfolio/SectionHeader";
 const groups = [
   {
     title: "Languages",
-    items: ["JavaScript", "TypeScript", "HTML5", "CSS3", "SQL"],
+    items: ["JavaScript ES6+", "TypeScript", "HTML5", "CSS3", "SCSS / SASS"],
   },
   {
     title: "Frameworks",
-    items: ["React", "Next.js", "Redux Toolkit", "React Router", "Tailwind CSS"],
+    items: ["React.js", "Redux Toolkit", "Context API", "Capacitor.js", "Angular"],
   },
   {
-    title: "Motion & UI",
-    items: ["Framer Motion", "GSAP", "Lenis", "Shadcn/UI", "Radix"],
+    title: "UI Styling",
+    items: ["Material-UI", "Tailwind CSS", "Bootstrap 5", "Styled Components", "ApexCharts"],
   },
   {
-    title: "Tooling",
-    items: ["Vite", "Webpack", "Git", "Figma", "Webflow"],
+    title: "Tooling & CMS",
+    items: ["Git · GitHub · GitLab", "Figma · Photoshop", "WordPress · Webflow · Shopify", "Lighthouse · RTL", "REST APIs · Agile"],
   },
 ];
 

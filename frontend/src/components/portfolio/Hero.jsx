@@ -1,5 +1,10 @@
 import { motion } from "framer-motion";
-import { ArrowDown, Github, Linkedin, Mail, Twitter } from "lucide-react";
+import { ArrowDown, Github, Linkedin, Mail, FileDown } from "lucide-react";
+
+const RESUME_URL = "https://customer-assets.emergentagent.com/job_dev-interact-hub/artifacts/zct9cj6j_Bhupinder-dev-resume.pdf";
+const LINKEDIN_URL = "https://www.linkedin.com/in/bhupinder-kumar-67b467178/";
+const GITHUB_URL = "https://github.com/Bhupinder-Kumar";
+const EMAIL = "bhupinderk0511@gmail.com";
 
 const stagger = {
   hidden: { opacity: 0 },
@@ -68,8 +73,9 @@ export default function Hero() {
         >
           <div className="md:col-span-7">
             <p className="font-mono text-sm md:text-base leading-relaxed text-muted-foreground max-w-xl">
-              <span className="text-foreground">// Frontend engineer</span> crafting fast, accessible
-              interfaces with React, TypeScript & obsessive attention to typography, motion and detail.
+              <span className="text-foreground">// Sr. Frontend Developer</span> with 4+ years shipping
+              React, TypeScript & Material-UI apps — LMS platforms, dashboards, PDF builders and
+              pixel-perfect marketing sites.
             </p>
           </div>
 
@@ -83,11 +89,14 @@ export default function Hero() {
               <ArrowDown size={14} className="group-hover:rotate-[-45deg] transition-transform" />
             </a>
             <a
-              href="#contact"
-              data-testid="hero-cta-contact"
-              className="inline-flex items-center gap-3 border-2 border-foreground px-5 py-3 font-mono text-xs uppercase tracking-[0.2em] hover:bg-foreground hover:text-background transition-colors"
+              href={RESUME_URL}
+              target="_blank"
+              rel="noreferrer"
+              data-testid="hero-cta-resume"
+              className="group inline-flex items-center gap-3 border-2 border-foreground px-5 py-3 font-mono text-xs uppercase tracking-[0.2em] hover:bg-foreground hover:text-background transition-colors"
             >
-              Get in touch
+              Resume
+              <FileDown size={14} className="group-hover:translate-y-0.5 transition-transform" />
             </a>
           </div>
         </motion.div>
@@ -103,18 +112,17 @@ export default function Hero() {
           </div>
           <div className="hidden md:block md:col-span-3">
             <p className="font-mono text-[10px] uppercase tracking-[0.25em] text-muted-foreground mb-1">Focus</p>
-            <p className="font-mono text-sm">React · Next.js · Motion</p>
+            <p className="font-mono text-sm">React · TypeScript · MUI</p>
           </div>
           <div className="hidden md:block md:col-span-3">
-            <p className="font-mono text-[10px] uppercase tracking-[0.25em] text-muted-foreground mb-1">Shipped</p>
-            <p className="font-mono text-sm">20+ live projects</p>
+            <p className="font-mono text-[10px] uppercase tracking-[0.25em] text-muted-foreground mb-1">Experience</p>
+            <p className="font-mono text-sm">4+ yrs · LMS · Dashboards</p>
           </div>
           <div className="md:col-span-3 flex items-center gap-3 md:justify-end">
             {[
-              { icon: Github, href: "https://github.com", label: "github" },
-              { icon: Linkedin, href: "https://linkedin.com", label: "linkedin" },
-              { icon: Twitter, href: "https://twitter.com", label: "twitter" },
-              { icon: Mail, href: "mailto:hello@example.com", label: "mail" },
+              { icon: Github, href: GITHUB_URL, label: "github" },
+              { icon: Linkedin, href: LINKEDIN_URL, label: "linkedin" },
+              { icon: Mail, href: `mailto:${EMAIL}`, label: "mail" },
             ].map(({ icon: Icon, href, label }) => (
               <a
                 key={label}

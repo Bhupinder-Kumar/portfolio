@@ -62,8 +62,14 @@ export default function Contact() {
             <div className="mt-10 space-y-4 font-mono text-sm">
               <div className="border-t border-border pt-4">
                 <div className="text-[10px] uppercase tracking-[0.25em] text-muted-foreground">Email</div>
-                <a href="mailto:hello@bhupinder.dev" data-testid="contact-email-link" className="hover:text-accent">
-                  hello@bhupinder.dev
+                <a href="mailto:bhupinderk0511@gmail.com" data-testid="contact-email-link" className="hover:text-accent break-all">
+                  bhupinderk0511@gmail.com
+                </a>
+              </div>
+              <div className="border-t border-border pt-4">
+                <div className="text-[10px] uppercase tracking-[0.25em] text-muted-foreground">Phone</div>
+                <a href="tel:+918557924030" data-testid="contact-phone-link" className="hover:text-accent">
+                  +91 8557924030
                 </a>
               </div>
               <div className="border-t border-border pt-4">
@@ -71,8 +77,11 @@ export default function Contact() {
                 <div>Punjab, India · UTC+5:30</div>
               </div>
               <div className="border-t border-border pt-4">
-                <div className="text-[10px] uppercase tracking-[0.25em] text-muted-foreground">Response time</div>
-                <div>Usually within a day</div>
+                <div className="text-[10px] uppercase tracking-[0.25em] text-muted-foreground">Elsewhere</div>
+                <div className="flex flex-wrap gap-x-4 gap-y-1">
+                  <a href="https://www.linkedin.com/in/bhupinder-kumar-67b467178/" target="_blank" rel="noreferrer" className="hover:text-accent">LinkedIn ↗</a>
+                  <a href="https://github.com/Bhupinder-Kumar" target="_blank" rel="noreferrer" className="hover:text-accent">GitHub ↗</a>
+                </div>
               </div>
             </div>
           </motion.div>

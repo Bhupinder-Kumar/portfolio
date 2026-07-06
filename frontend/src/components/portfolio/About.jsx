@@ -2,10 +2,10 @@ import { motion } from "framer-motion";
 import SectionHeader from "@/components/portfolio/SectionHeader";
 
 const facts = [
-  { k: "Years", v: "3+" },
-  { k: "Projects", v: "20+" },
-  { k: "Clients", v: "10+" },
-  { k: "Stars", v: "150+" },
+  { k: "Years", v: "4+" },
+  { k: "LMS Modules", v: "8+" },
+  { k: "Perf Gain", v: "35%" },
+  { k: "SEO Boost", v: "40%" },
 ];
 
 export default function About() {
@@ -52,10 +52,11 @@ export default function About() {
                 clarity, speed and the smallest details users never consciously notice.
               </p>
               <p className="mt-8 font-mono text-sm md:text-base leading-relaxed text-muted-foreground max-w-2xl">
-                Over the last few years I&apos;ve partnered with startups, agencies and product teams to ship
-                landing pages, dashboards, e-commerce stores and marketing sites. My toolkit centres on
-                React, TypeScript and Tailwind — but the real craft happens in the space between design
-                and code: motion, hierarchy, edge-cases and delight.
+                Currently Sr. Frontend Developer at Masters&apos; Union (Venturepact) — shipping a
+                Learning Management System with React, TypeScript &amp; Material-UI across web and
+                mobile (Capacitor.js). Previously built and revamped Outgrow&apos;s main site, blog and
+                the Omniengage product. Focused on accessibility (WCAG 2.1), performance (lazy load,
+                code-splitting, memoization) and pixel-perfect design translation.
               </p>
             </div>
 
