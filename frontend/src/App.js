@@ -1,56 +1,86 @@
 import { useEffect } from "react";
-import "@/App.css";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import axios from "axios";
-import { HOME } from "@/constants/testIds";
+import Lenis from "lenis";
+import { Toaster } from "sonner";
+import { ThemeProvider } from "@/context/ThemeContext";
+import Portfolio from "@/components/Portfolio";
+import "@/index.css";
 
 const BACKEND_URL = process.env.REACT_APP_BACKEND_URL;
 const API = `${BACKEND_URL}/api`;
 
-const Home = () => {
-  const helloWorldApi = async () => {
-    try {
-      const response = await axios.get(`${API}/`);
-      console.log(response.data.message);
-    } catch (e) {
-      console.error(e, `errored out requesting / api`);
-    }
-  };
-
+function useLenisScroll() {
   useEffect(() => {
-    helloWorldApi();
+    const lenis = new Lenis({
+      duration: 1.15,
+      easing: (t) => Math.min(1, 1.001 - Math.pow(2, -10 * t)),
+      smoothWheel: true,
+    });
+    let rafId;
+    function raf(time) {
+      lenis.raf(time);
+      rafId = requestAnimationFrame(raf);
+    }
+    rafId = requestAnimationFrame(raf);
+    return () => {
+      cancelAnimationFrame(rafId);
+      lenis.destroy();
+    };
   }, []);
+}
 
-  return (
-    <div>
-      <header className="App-header">
-        <a
-          data-testid={HOME.emergentLink}
-          className="App-link"
-          href="https://emergent.sh"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <img src="https://avatars.githubusercontent.com/in/1201222?s=120&u=2686cf91179bbafbc7a71bfbc43004cf9ae1acea&v=4" />
-        </a>
-        <p className="mt-5">Building something incredible ~!</p>
-      </header>
-    </div>
-  );
-};
+function useVisitTracker() {
+  useEffect(() => {
+    const key = "portfolio_session_id";
+    let sid = sessionStorage.getItem(key);
+    if (!sid) {
+      sid = crypto.randomUUID();
+      sessionStorage.setItem(key, sid);
+    }
+    axios
+      .post(`${API}/analytics/track`, {
+        event: "page_view",
+        path: window.location.pathname,
+        session_id: sid,
+        referrer: document.referrer || null,
+      })
+      .catch(() => {});
+  }, []);
+}
 
-function App() {
+function AppInner() {
+  useLenisScroll();
+  useVisitTracker();
   return (
-    <div className="App">
-      <BrowserRouter>
-        <Routes>
-          <Route path="/" element={<Home />}>
-            <Route index element={<Home />} />
-          </Route>
-        </Routes>
-      </BrowserRouter>
-    </div>
+    <>
+      <Portfolio />
+      <Toaster
+        position="bottom-right"
+        toastOptions={{
+          style: {
+            background: "hsl(var(--card))",
+            color: "hsl(var(--card-foreground))",
+            border: "1px solid hsl(var(--border))",
+            borderRadius: 0,
+            fontFamily: "'IBM Plex Mono', monospace",
+          },
+        }}
+      />
+    </>
   );
 }
 
-export default App;
+export default function App() {
+  return (
+    <ThemeProvider>
+      <div className="App grain">
+        <BrowserRouter>
+          <Routes>
+            <Route path="/" element={<AppInner />} />
+          </Routes>
+        </BrowserRouter>
+      </div>
+    </ThemeProvider>
+  );
+}

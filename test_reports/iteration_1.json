@@ -1,0 +1,35 @@
+{
+  "summary": "First-finish smoke test of Bhupinder K. portfolio (backend FastAPI + React frontend). All 5 backend endpoints work with correct validation and CORS. Frontend renders all 10 sections with correct data-testids; theme toggle persists to localStorage; nav+mobile menu work; 4 project links point to correct Netlify URLs; contact form submit succeeds end-to-end (frontend->backend persistence verified) and shows success sonner toast + resets inputs. One minor gap: empty-form submission relies on HTML5 required validation instead of a sonner error toast.",
+  "tested_scope": ["frontend", "backend", "integration"],
+  "passed": [
+    "GET /api/ returns 200",
+    "POST /api/contact valid payload -> 200 with id, name, email, subject, message, created_at",
+    "POST /api/contact invalid payload -> 422 (empty name, bad email, empty message)",
+    "GET /api/contact returns list including submitted messages",
+    "POST /api/analytics/track returns event with server timestamp, ip_hash, user_agent",
+    "GET /api/analytics/stats returns total_views, unique_sessions, total_contacts as numbers and reflects new events",
+    "CORS preflight OPTIONS returns access-control-allow-origin/methods/headers",
+    "All 10 sections render (site-navbar, hero, marquee, about, skills, projects, experience, testimonials, contact, footer)",
+    "Hero shows 'BHUPINDER.' and CTAs (hero-cta-projects, hero-cta-contact) visible",
+    "Theme toggle switches html.dark class and persists in localStorage after reload",
+    "nav-link-about updates URL hash to #about",
+    "4 project links have correct hrefs (ephemeral-choux-453feb, phenomenal-druid-8a63b1, r3buildingsolutions, webflow-page netlify domains)",
+    "Mobile viewport 375x800: mobile-menu-toggle opens mobile-menu with 5 mobile-nav-link-* items",
+    "Contact form submit shows success sonner toast 'Message sent...' and inputs reset",
+    "Submitted message appears in GET /api/contact (end-to-end integration)"
+  ],
+  "failed": [
+    {
+      "area": "Frontend / Contact form",
+      "issue": "Empty-fields submit does NOT display a sonner error toast; browser's native HTML5 'required' validation blocks submission instead, so toast_texts was empty in test.",
+      "evidence": "TOAST after empty submit: '' (empty string). Success toast fires correctly for valid submit.",
+      "priority": "LOW"
+    }
+  ],
+  "action_items": [
+    "Optional: If a sonner error toast is required per spec on empty submit, remove `required` attributes on inputs and add explicit client-side validation with toast.error(...) in Contact.jsx. Otherwise the native browser validation is acceptable UX."
+  ],
+  "success_rate": {"backend": "100%", "frontend": "~95%"},
+  "retest_needed": false,
+  "full_testing_deferred": true
+}
