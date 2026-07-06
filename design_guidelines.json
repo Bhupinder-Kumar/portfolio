@@ -1,0 +1,118 @@
+{
+  "theme_and_archetype": {
+    "archetype": "Archetype 4: Swiss & High-Contrast",
+    "theme": "light_and_dark_supported",
+    "rationale": "For a distinctive frontend developer portfolio, we are adopting a Swiss Brutalist aesthetic. This breaks the generic 'Vercel/SaaS' developer portfolio mold by using extreme contrast, oversized typography, strict grids, and a single striking accent color. It communicates authority, precision, and high-end technical capability."
+  },
+  "colors": {
+    "light": {
+      "background": "#F2F2F2",
+      "surface": "#FFFFFF",
+      "text_primary": "#111111",
+      "text_secondary": "#555555",
+      "border": "#111111",
+      "accent": "#FF3333",
+      "accent_foreground": "#FFFFFF",
+      "glass": "rgba(255, 255, 255, 0.8)"
+    },
+    "dark": {
+      "background": "#0A0A0A",
+      "surface": "#1A1A1A",
+      "text_primary": "#EDEDED",
+      "text_secondary": "#A0A0A0",
+      "border": "rgba(255, 255, 255, 0.15)",
+      "accent": "#FF3333",
+      "accent_foreground": "#FFFFFF",
+      "glass": "rgba(10, 10, 10, 0.7)"
+    }
+  },
+  "typography": {
+    "font_families": {
+      "heading": "'Cabinet Grotesk', 'Clash Display', 'Satoshi', sans-serif",
+      "body": "'IBM Plex Mono', 'Space Mono', monospace"
+    },
+    "scale": {
+      "h1": "text-5xl sm:text-7xl lg:text-[8vw] leading-none tracking-tighter uppercase font-black",
+      "h2": "text-4xl sm:text-5xl lg:text-6xl leading-tight tracking-tight uppercase font-bold",
+      "h3": "text-2xl sm:text-3xl leading-snug tracking-tight font-bold",
+      "h4": "text-xl font-bold uppercase tracking-widest",
+      "body": "text-base sm:text-lg leading-relaxed font-normal",
+      "overline": "text-xs sm:text-sm uppercase tracking-[0.2em] font-bold",
+      "caption": "text-xs uppercase tracking-wider"
+    },
+    "rules": [
+      "Headings must use tight letter spacing (-0.02em to -0.04em).",
+      "Use Monospace for body text to reinforce the 'developer' persona.",
+      "Overlines and small labels must be deeply tracked (0.2em) and uppercase.",
+      "Avoid standard bolding for contrast; mix 'Black' weight headings with 'Regular' monospace body."
+    ]
+  },
+  "layout_and_spacing": {
+    "system": "Generous Spacing + Swiss Bento Grid",
+    "rules": [
+      "Use aggressive padding between sections (py-32 or py-40) to create breathing room.",
+      "Containers with borders must use thick inner padding (p-8 or p-12).",
+      "Embrace asymmetry. Do not center everything. Align left tightly to the grid.",
+      "Borders: 1px to 2px solid borders for structure (border-black in light, border-white/15 in dark). Avoid soft rounded corners; use rounded-none or max rounded-sm."
+    ],
+    "patterns": {
+      "hero": "Full height (min-h-screen). Massive typography pushed to edges. Absolute positioned abstract textures.",
+      "bento_grid": "grid-cols-1 md:grid-cols-12 gap-px bg-border. Children must have bg-background. This creates a hairline grid effect."
+    }
+  },
+  "motion_and_interactions": {
+    "libraries": [
+      "framer-motion (for scroll reveals, layout animations, hover states)",
+      "lenis (MANDATORY for momentum smooth scrolling)",
+      "react-fast-marquee (for editorial moving text ribbons)",
+      "lucide-react (for iconography)"
+    ],
+    "micro_interactions": [
+      "Links & Buttons: Hover states should feature harsh color inversions (e.g., bg-black text-white to bg-accent text-white) rather than soft opacity fades.",
+      "Terminal Scramble Effect: Use Framer Motion or custom React hook to 'scramble' nav link text or skill tags on hover (e.g., random characters flipping to the actual word).",
+      "Project Cards: Arrow icons should translate right and up (-translate-y-1 translate-x-1) on hover.",
+      "Scroll Animations: Fade up and slight Y-translation (y: 40, opacity: 0 to 1) for section entrances, staggered for list items."
+    ]
+  },
+  "components": {
+    "header": "Fixed top, backdrop-blur-xl (glassmorphism rules). 1px bottom border. Left-aligned logo/name, right-aligned nav links and theme toggle.",
+    "buttons": "Brutalist. Solid sharp rectangles. border-2 border-primary in light mode. uppercase, deeply tracked text. Hover: fill with Accent color.",
+    "project_card": "Oversized numeric index (01, 02). Large typographic title. On hover, a clipped background image or abstract texture scales up slightly behind the text. Include an external link arrow.",
+    "skills_container": "Marquee ribbon of skills in massive outline text (text-transparent stroke-black), OR a strict mono-spaced grid of tags.",
+    "contact_form": "Shadcn components heavily stripped down. No border-radius. 1px solid bottom borders on inputs instead of full boxes. Giant 'LET'S TALK' heading."
+  },
+  "media_and_assets": {
+    "images": {
+      "hero_texture_light": {
+        "url": "https://images.unsplash.com/photo-1482053450283-3e0b78b09a70?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjAzMzl8MHwxfHNlYXJjaHwzfHxhYnN0cmFjdCUyMG1vbm9jaHJvbWUlMjBnZW9tZXRyeXxlbnwwfHx8fDE3ODMzMTc4OTV8MA&ixlib=rb-4.1.0&q=85",
+        "description": "Curved white latticework. Use as absolute background in light mode hero, low opacity (10-20%) or masked.",
+        "category": "background"
+      },
+      "hero_texture_dark": {
+        "url": "https://images.unsplash.com/photo-1607128849509-bdccb1b58d09?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjA1NTZ8MHwxfHNlYXJjaHwxfHxkYXJrJTIwbWluaW1hbCUyMGxpbmVzJTIwdGV4dHVyZXxlbnwwfHx8fDE3ODMzMTc5MDV8MA&ixlib=rb-4.1.0&q=85",
+        "description": "Black and white striped textile. Use as absolute background in dark mode hero, low opacity.",
+        "category": "background"
+      },
+      "profile_placeholder": {
+        "url": "https://images.unsplash.com/photo-1765776830139-72b2184dae5a?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NTY2NzR8MHwxfHNlYXJjaHwxfHxwcm9mZXNzaW9uYWwlMjBtYWxlJTIwcG9ydHJhaXQlMjBkYXJrJTIwYmFja2dyb3VuZHxlbnwwfHx8fDE3ODMzMTc4OTV8MA&ixlib=rb-4.1.0&q=85",
+        "description": "Professional portrait for the About section.",
+        "category": "portrait"
+      }
+    }
+  },
+  "testing_requirements": {
+    "rules": [
+      "All interactive elements MUST include data-testid attribute.",
+      "Use kebab-case, role-based naming (e.g., data-testid='hero-cta-button', data-testid='theme-toggle', data-testid='project-link-1')."
+    ]
+  },
+  "instructions_to_main_agent": [
+    "Install required dependencies: framer-motion, lucide-react, react-fast-marquee, @studio-freight/lenis (or lenis).",
+    "Configure Tailwind with the specified typography fonts (Cabinet Grotesk and IBM Plex Mono). Add them via Google Fonts or custom font imports in index.css.",
+    "Implement a strict Light/Dark mode toggle. Use next-themes if using Next.js, or standard React Context for vanilla React.",
+    "Build the projects section using the exact URLs provided in the problem statement.",
+    "Avoid generic 'cards'. Use full-width rows with border-bottom or harsh bento grids for project listings.",
+    "Do not use border-radius (keep rounded-none) to maintain the brutalist/editorial aesthetic.",
+    "Ensure the hero section uses fluid typography (e.g. clamp or vw units) so 'BHUPINDER K.' dominates the screen."
+  ]
+}
