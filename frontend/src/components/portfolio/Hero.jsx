@@ -63,7 +63,7 @@ export default function Hero() {
           data-testid="hero-name"
           className="font-display font-bold uppercase leading-[0.85] tracking-[-0.04em] text-[16vw] md:text-[13vw] break-words"
         >
-          BHUPINDERK<span className="text-accent">.</span>
+          BHUPINDER<span className="text-accent">.</span>
         </motion.h1>
 
         {/* Subline row */}
