@@ -95,7 +95,7 @@ export default function Navbar() {
                   data-testid={`mobile-nav-link-${l.label.toLowerCase()}`}
                   className="font-mono text-sm uppercase tracking-[0.2em] hover:text-accent transition-colors flex items-center gap-3"
                 >
-                  <span className="text-muted-foreground">0{i + 1}</span>
+                  {/* <span className="text-muted-foreground">0{i + 1}</span> */}
                   {l.label}
                 </a>
               ))}

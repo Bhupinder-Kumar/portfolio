@@ -61,7 +61,7 @@ export default function Hero() {
         <motion.h1
           variants={item}
           data-testid="hero-name"
-          className="font-display font-bold uppercase leading-[0.85] tracking-[-0.04em] text-[16vw] md:text-[13vw] break-words"
+          className="font-display font-bold uppercase leading-[0.85] tracking-[-0.04em] text-[14vw] md:text-[13vw] break-words"
         >
           BHUPINDER<span className="text-accent">.</span>
         </motion.h1>
