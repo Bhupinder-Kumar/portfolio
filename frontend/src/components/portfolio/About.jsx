@@ -1,5 +1,6 @@
 import { motion } from "framer-motion";
 import SectionHeader from "@/components/portfolio/SectionHeader";
+import portfolioImg from "../../assets/images/portfolioImg.PNG";
 
 const facts = [
   { k: "Years", v: "5+" },
@@ -28,12 +29,12 @@ export default function About() {
           >
             <div className="relative aspect-[4/5] w-full border-2 border-border overflow-hidden group">
               <img
-                src="https://images.unsplash.com/photo-1531891437562-4301cf35b7e4?w=900&q=80&auto=format&fit=crop"
+                src={portfolioImg}
                 alt="Portrait"
                 className="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-700 group-hover:scale-105"
               />
               <div className="absolute bottom-0 left-0 right-0 p-4 bg-background/80 backdrop-blur border-t border-border flex items-center justify-between">
-                <span className="font-mono text-[10px] uppercase tracking-[0.25em]">Bhupinder K.</span>
+                <span className="font-mono text-[10px] uppercase tracking-[0.25em]">Bhupinder Kumar</span>
                 <span className="font-mono text-[10px] uppercase tracking-[0.25em] text-accent">Frontend Dev</span>
               </div>
             </div>
