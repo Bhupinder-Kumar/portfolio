@@ -5,10 +5,10 @@ import Lenis from "lenis";
 import { Toaster } from "sonner";
 import { ThemeProvider } from "@/context/ThemeContext";
 import Portfolio from "@/components/Portfolio";
+import { getApiBaseUrl } from "@/lib/utils";
 import "@/index.css";
 
-const BACKEND_URL = process.env.REACT_APP_BACKEND_URL;
-const API = `${BACKEND_URL}/api`;
+const API = getApiBaseUrl();
 
 function useLenisScroll() {
   useEffect(() => {
