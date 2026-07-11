@@ -38,7 +38,7 @@ export default function Contact() {
       className="relative py-24 md:py-40 px-5 md:px-10 border-b border-border"
     >
       <div className="mx-auto max-w-[1600px]">
-        <SectionHeader index="07" title="Let's Talk" kicker="Open for select projects" />
+        <SectionHeader index="08" title="Let's Talk" kicker="Open for select projects" />
 
         <div className="mt-12 md:mt-20 grid grid-cols-1 md:grid-cols-12 gap-10 md:gap-16">
           <motion.div
