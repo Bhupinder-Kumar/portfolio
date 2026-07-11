@@ -4,8 +4,9 @@ import axios from "axios";
 import { toast } from "sonner";
 import { Send, Loader2 } from "lucide-react";
 import SectionHeader from "@/components/portfolio/SectionHeader";
+import { getApiBaseUrl } from "@/lib/utils";
 
-const API = `${process.env.REACT_APP_BACKEND_URL}/api`;
+const API = getApiBaseUrl();
 
 export default function Contact() {
   const [form, setForm] = useState({ name: "", email: "", subject: "", message: "" });
