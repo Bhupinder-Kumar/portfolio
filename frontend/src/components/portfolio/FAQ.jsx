@@ -89,7 +89,7 @@ export default function FAQ() {
                         {f.q}
                       </span>
                     </div>
-                  </AccordionTrigger>
+                  </AccordionTrigger> 
                   <AccordionContent
                     data-testid={`faq-content-${i}`}
                     className="pl-14 pr-4 pb-6"
