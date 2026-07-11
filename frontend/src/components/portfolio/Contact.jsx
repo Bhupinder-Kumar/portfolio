@@ -21,8 +21,14 @@ export default function Contact() {
     }
     setLoading(true);
     try {
-      await axios.post(`${API}/contact`, form);
-      toast.success("Message sent — I'll get back to you soon.");
+      const { data } = await axios.post(`${API}/contact`, form);
+      if (data?.email_sent) {
+        toast.success("Message sent to my inbox — I'll get back to you soon.");
+      } else if (data?.email_status === "disabled") {
+        toast.success("Message saved. Email delivery isn't configured yet, so please use the email link above for now.");
+      } else {
+        toast.success("Message saved, but email delivery hit a snag. Please email me directly if it's urgent.");
+      }
       setForm({ name: "", email: "", subject: "", message: "" });
     } catch (err) {
       toast.error("Something went wrong. Please try again.");
@@ -54,8 +60,8 @@ export default function Contact() {
                 <span className="text-accent"> Drop a line.</span>
               </p>
               <p className="mt-6 font-mono text-sm text-muted-foreground max-w-md">
-                I reply to every message within 24–48 hours. For freelance work, share a brief and a
-                timeline; for roles, feel free to attach a JD.
+                I reply to every message within 24–48 hours. Your note is routed to bhupinderk0511@gmail.com;
+                for freelance work, share a brief and a timeline, and for roles, feel free to attach a JD.
               </p>
             </div>
 
