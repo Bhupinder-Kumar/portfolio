@@ -1,7 +1,8 @@
 import { motion } from "framer-motion";
 import { ArrowDown, Github, Linkedin, Mail, FileDown } from "lucide-react";
+import resume from "../../assets/resume/Bhupinder-dev-resume.pdf";
 
-const RESUME_URL = "https://customer-assets.emergentagent.com/job_dev-interact-hub/artifacts/zct9cj6j_Bhupinder-dev-resume.pdf";
+const RESUME_URL = resume;
 const LINKEDIN_URL = "https://www.linkedin.com/in/bhupinder-kumar-67b467178/";
 const GITHUB_URL = "https://github.com/Bhupinder-Kumar";
 const EMAIL = "bhupinderk0511@gmail.com";
