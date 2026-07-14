@@ -1,74 +1,174 @@
 <!doctype html>
 <html lang="en">
 
-<head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="theme-color" content="#000000" />
 
-    <!-- Primary SEO -->
+        <!-- Primary SEO -->
     <title>Bhupinder Kumar | Frontend Developer | React & Next.js Expert</title>
 
     <meta name="description" content="Bhupinder Kumar is a Frontend Developer with 5+ years of experience building high-performance React, Next.js, TypeScript, and JavaScript applications. View projects, skills, and experience."/>
 
     <meta name="keywords" content="Bhupinder Kumar, Frontend Developer, React Developer, Next.js Developer, JavaScript Developer, TypeScript Developer, Redux, Tailwind CSS, Responsive Web Design, Frontend Engineer, UI Developer, Portfolio, Freelance Frontend Developer, India" />
 
-    <meta name="author" content="Bhupinder Kumar" />
-    <meta name="robots" content="index,follow,max-image-preview:large,max-snippet:-1,max-video-preview:-1">
+        <meta name="author" content="Bhupinder Kumar" />
+        <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
+        <meta name="googlebot" content="index, follow" />
+        <link rel="canonical" href="https://kumarbhupinder.in/" />
 
-    <!-- Canonical -->
-    <link rel="canonical" href="https://kumarbhupinder.in/">
+        <!-- Open Graph / Facebook / LinkedIn -->
+        <meta property="og:type" content="website" />
+        <meta property="og:site_name" content="Bhupinder Kumar — Frontend Developer" />
+        <meta property="og:title" content="Bhupinder Kumar — Sr. Frontend Developer" />
+        <meta property="og:description" content="5+ years shipping React, TypeScript &amp; Material-UI apps — LMS platforms, dashboards, marketing sites and pixel-perfect UI." />
+        <meta property="og:url" content="https://kumarbhupinder.in/" />
+        <meta property="og:image" content="https://kumarbhupinder.in/og-image.png" />
+        <meta property="og:locale" content="en_IN" />
 
-    <!-- Open Graph -->
-    <meta property="og:type" content="website" />
-    <meta property="og:url" content="https://kumarbhupinder.in/" />
-    <meta property="og:title" content="Bhupinder Kumar | Frontend Developer" />
-    <meta property="og:description" content="Frontend Developer specializing in React, Next.js, JavaScript, TypeScript and scalable web applications.">
+        <!-- Twitter -->
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content="Bhupinder Kumar — Sr. Frontend Developer" />
+        <meta name="twitter:description" content="5+ years shipping React, TypeScript &amp; Material-UI apps — LMS platforms, dashboards, marketing sites and pixel-perfect UI." />
+        <meta name="twitter:image" content="https://kumarbhupinder.in/og-image.png" />
 
-    <meta property="og:image" content="https://kumarbhupinder.in/og-image.png" />
-    <meta property="og:site_name" content="Bhupinder Kumar Portfolio" />
+        <!-- Sitemap + Robots discovery -->
+        <link rel="sitemap" type="application/xml" title="Sitemap" href="/sitemap.xml" />
 
-    <!-- Twitter -->
-    <meta name="twitter:card" content="summary_large_image" />
-    <meta name="twitter:title" content="Bhupinder Kumar | Frontend Developer" />
-    <meta name="twitter:description"
-        content="5+ years building React, Next.js and TypeScript applications." />
-    <meta name="twitter:image" content="https://kumarbhupinder.in/og-image.png" />
-
-    <!-- Favicon -->
-    <link rel="apple-touch-icon" sizes="180x180" href="../src/assets/images/favicon_io/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="../src/assets/images/favicon_io/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="../src/assets/images/favicon_io/favicon-16x16.png">
-    <link rel="manifest" href="../src/assets/images/favicon_io/site.webmanifest">
-
-    <!-- Fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link rel="preconnect" href="https://api.fontshare.com" crossorigin />
         <link href="https://fonts.googleapis.com/css2?family=Inter:wght@600&display=swap" rel="stylesheet" />
 
-    <!-- Performance -->
-    <script>
-        window.addEventListener(
-            "error",
-            function (e) {
-                if (
-                    e.error instanceof DOMException &&
-                    e.error.name === "DataCloneError" &&
-                    e.message?.includes("PerformanceServerTiming")
-                ) {
-                    e.stopImmediatePropagation();
-                    e.preventDefault();
-                }
+        <!-- Structured data: Person + WebSite (JSON-LD for Google) -->
+        <script type="application/ld+json">
+        {
+          "@context": "https://schema.org",
+          "@graph": [
+            {
+              "@type": "Person",
+              "@id": "https://kumarbhupinder.in/#person",
+              "name": "Bhupinder Kumar",
+              "url": "https://kumarbhupinder.in/",
+              "jobTitle": "Sr. Frontend Developer",
+              "email": "mailto:bhupinderk0511@gmail.com",
+              "telephone": "+91-8557924030",
+              "worksFor": {
+                "@type": "Organization",
+                "name": "Masters' Union (Venturepact)"
+              },
+              "alumniOf": {
+                "@type": "CollegeOrUniversity",
+                "name": "Guru Nanak Dev University",
+                "address": "Punjab, India"
+              },
+              "knowsAbout": [
+                "React.js", "TypeScript", "JavaScript", "Material-UI",
+                "Redux Toolkit", "Tailwind CSS", "SCSS", "Bootstrap 5",
+                "Capacitor.js", "ApexCharts", "WordPress", "Webflow", "Shopify",
+                "Web Accessibility (WCAG 2.1)", "Performance Optimization", "SEO"
+              ],
+              "sameAs": [
+                "https://github.com/Bhupinder-Kumar",
+                "https://www.linkedin.com/in/bhupinder-kumar-67b467178/"
+              ],
+              "address": {
+                "@type": "PostalAddress",
+                "addressRegion": "Punjab",
+                "addressCountry": "IN"
+              }
             },
-            true
-        );
-    </script>
-    <script src="https://assets.emergent.sh/scripts/emergent-main.js"></script>
-</head>
-<body>
-    <noscript>You need to enable JavaScript to run this app.</noscript>
-    <div id="root"></div>
-    <!--
+            {
+              "@type": "WebSite",
+              "@id": "https://kumarbhupinder.in/#website",
+              "url": "https://kumarbhupinder.in/",
+              "name": "Bhupinder Kumar — Portfolio",
+              "description": "Sr. Frontend Developer with 5+ years shipping React, TypeScript and Material-UI apps.",
+              "publisher": { "@id": "https://kumarbhupinder.in/#person" },
+              "inLanguage": "en-IN"
+            },
+            {
+              "@type": "ProfilePage",
+              "url": "https://kumarbhupinder.in/",
+              "mainEntity": { "@id": "https://kumarbhupinder.in/#person" }
+            },
+            {
+              "@type": "FAQPage",
+              "mainEntity": [
+                {
+                  "@type": "Question",
+                  "name": "What kind of projects do you take on?",
+                  "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "I focus on React / TypeScript / Material-UI builds — LMS platforms, admin dashboards, marketing sites, PDF builders and design-system work."
+                  }
+                },
+                {
+                  "@type": "Question",
+                  "name": "Are you open to full-time roles or only freelance?",
+                  "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Both. I'm currently Sr. Frontend Developer at Masters' Union (Venturepact) and open to selective full-time and contract opportunities — remote or Onsite in Punjab/Delhi NCR."
+                  }
+                },
+                {
+                  "@type": "Question",
+                  "name": "What's your typical tech stack?",
+                  "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "React.js, TypeScript, Redux Toolkit, Material-UI, Tailwind, SCSS, Capacitor.js for mobile, ApexCharts for data viz, plus WordPress, Webflow and Shopify when required."
+                  }
+                },
+                {
+                  "@type": "Question",
+                  "name": "How do you approach performance and accessibility?",
+                  "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Lazy loading, code-splitting, memoization and image optimization for performance (35% render-time gains on real products). Accessibility follows WCAG 2.1 — semantic markup, keyboard flows, focus states and Lighthouse audits."
+                  }
+                },
+                {
+                  "@type": "Question",
+                  "name": "How quickly can you start? What are your rates?",
+                  "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Availability is usually 1–2 weeks. Rates depend on scope and engagement type. Share a brief on the contact form and I'll come back with a proposal within 48 hours."
+                  }
+                },
+                {
+                  "@type": "Question",
+                  "name": "Do you work with designers or can you handle design too?",
+                  "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Both. I collaborate closely with UX/UI designers to translate Figma into pixel-perfect code. For smaller projects I can handle end-to-end design in Figma before implementation."
+                  }
+                }
+              ]
+            }
+          ]
+        }
+        </script>
+        <!--
+        manifest.json provides metadata used when your web app is installed on a
+        user's mobile device or desktop. See https://developers.google.com/web/fundamentals/web-app-manifest/
+        -->
+        <!--
+        Notice the use of %PUBLIC_URL% in the tags above.
+        It will be replaced with the URL of the `public` folder during the build.
+        Only files inside the `public` folder can be referenced from the HTML.
+
+        Unlike "/favicon.ico" or "favicon.ico", "%PUBLIC_URL%/favicon.ico" will
+        work correctly both with client-side routing and a non-root public URL.
+        Learn how to configure a non-root public URL by running `npm run build`.
+        -->
+        <script>window.addEventListener("error",function(e){if(e.error instanceof DOMException&&e.error.name==="DataCloneError"&&e.message&&e.message.includes("PerformanceServerTiming")){e.stopImmediatePropagation();e.preventDefault()}},true);</script>
+        <script src="https://assets.emergent.sh/scripts/emergent-main.js"></script>
+    </head>
+    <body>
+        <noscript>You need to enable JavaScript to run this app.</noscript>
+        <div id="root"></div>
+        <!--
       This HTML file is a template.
       If you open it directly in the browser, you will see an empty page.
 
@@ -99,14 +199,14 @@
                 font-size: 12px !important;
                 z-index: 9999 !important;
             ">
-        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
             <path
                 d="M15.5702 8.13142C15.7729 8.0412 16.0007 8.18878 15.9892 8.4103C15.8374 11.3192 14.0965 14.0405 11.2531 15.3065C8.40964 16.5725 5.2224 16.0453 2.95912 14.2117C2.78676 14.072 2.82955 13.804 3.03219 13.7137L4.95677 12.8568C5.04866 12.8159 5.15446 12.823 5.24204 12.8725C6.73377 13.7153 8.59176 13.8649 10.2772 13.1145C11.9626 12.3641 13.0947 10.8833 13.4665 9.21075C13.4883 9.11256 13.5539 9.02918 13.6457 8.98827L15.5702 8.13142Z"
                 fill="white" />
             <path fill-rule="evenodd" clip-rule="evenodd"
                 d="M15.3066 4.74698L15.5067 5.19653C15.5759 5.35178 15.5061 5.53366 15.3508 5.60278L1.29992 11.8586C1.14467 11.9278 0.962794 11.8579 0.893675 11.7027L0.701732 11.2716L0.693457 11.2531C-1.10317 7.21778 0.711626 2.49007 4.74692 0.693443C8.78221 -1.10318 13.51 0.711693 15.3066 4.74698ZM2.82356 8.55367C2.63552 8.63739 2.41991 8.51617 2.40853 8.31065C2.28373 6.05724 3.53858 3.85787 5.72286 2.88536C7.90715 1.91286 10.3813 2.45199 11.9724 4.05256C12.1175 4.19854 12.0633 4.43988 11.8753 4.5236L2.82356 8.55367Z"
                 fill="white" />
-        </svg>
+            </svg>
         <p style="
                     color: #FFF !important;
                     font-family: 'Inter', sans-serif !important;
@@ -117,14 +217,14 @@
                     margin: 0 !important;
                     white-space: nowrap !important;
                 ">
-            Made with Emergent
-        </p>
+                Made with Emergent
+            </p>
     </a> -->
-    <script>
-        !(function (t, e) {
-            var o, n, p, r;
-            e.__SV ||
-                ((window.posthog = e),
+        <script>
+            !(function (t, e) {
+                var o, n, p, r;
+                e.__SV ||
+                    ((window.posthog = e),
                     (e._i = []),
                     (e.init = function (i, s, a) {
                         function g(t, e) {
@@ -157,23 +257,23 @@
                         var u = e;
                         for (
                             void 0 !== a ? (u = e[a] = []) : (a = "posthog"),
-                            u.people = u.people || [],
-                            u.toString = function (t) {
-                                var e = "posthog";
-                                return (
-                                    "posthog" !== a && (e += "." + a),
-                                    t || (e += " (stub)"),
-                                    e
-                                );
-                            },
-                            u.people.toString = function () {
-                                return u.toString(1) + ".people (stub)";
-                            },
-                            o =
-                            "init me ws ys ps bs capture je Di ks register register_once register_for_session unregister unregister_for_session Ps getFeatureFlag getFeatureFlagPayload isFeatureEnabled reloadFeatureFlags updateEarlyAccessFeatureEnrollment getEarlyAccessFeatures on onFeatureFlags onSurveysLoaded onSessionId getSurveys getActiveMatchingSurveys renderSurvey canRenderSurvey canRenderSurveyAsync identify setPersonProperties group resetGroups setPersonPropertiesForFlags resetPersonPropertiesForFlags setGroupPropertiesForFlags resetGroupPropertiesForFlags reset get_distinct_id getGroups get_session_id get_session_replay_url alias set_config startSessionRecording stopSessionRecording sessionRecordingStarted captureException loadToolbar get_property getSessionProperty Es $s createPersonProfile Is opt_in_capturing opt_out_capturing has_opted_in_capturing has_opted_out_capturing clear_opt_in_out_capturing Ss debug xs getPageViewId captureTraceFeedback captureTraceMetric".split(
-                                " ",
-                            ),
-                            n = 0;
+                                u.people = u.people || [],
+                                u.toString = function (t) {
+                                    var e = "posthog";
+                                    return (
+                                        "posthog" !== a && (e += "." + a),
+                                        t || (e += " (stub)"),
+                                        e
+                                    );
+                                },
+                                u.people.toString = function () {
+                                    return u.toString(1) + ".people (stub)";
+                                },
+                                o =
+                                    "init me ws ys ps bs capture je Di ks register register_once register_for_session unregister unregister_for_session Ps getFeatureFlag getFeatureFlagPayload isFeatureEnabled reloadFeatureFlags updateEarlyAccessFeatureEnrollment getEarlyAccessFeatures on onFeatureFlags onSurveysLoaded onSessionId getSurveys getActiveMatchingSurveys renderSurvey canRenderSurvey canRenderSurveyAsync identify setPersonProperties group resetGroups setPersonPropertiesForFlags resetPersonPropertiesForFlags setGroupPropertiesForFlags resetGroupPropertiesForFlags reset get_distinct_id getGroups get_session_id get_session_replay_url alias set_config startSessionRecording stopSessionRecording sessionRecordingStarted captureException loadToolbar get_property getSessionProperty Es $s createPersonProfile Is opt_in_capturing opt_out_capturing has_opted_in_capturing has_opted_out_capturing clear_opt_in_out_capturing Ss debug xs getPageViewId captureTraceFeedback captureTraceMetric".split(
+                                        " ",
+                                    ),
+                                n = 0;
                             n < o.length;
                             n++
                         )
@@ -181,16 +281,16 @@
                         e._i.push([i, s, a]);
                     }),
                     (e.__SV = 1));
-        })(document, window.posthog || []);
-        posthog.init("phc_xAvL2Iq4tFmANRE7kzbKwaSqp1HJjN7x48s3vr0CMjs", {
-            api_host: "https://us.i.posthog.com",
-            person_profiles: "identified_only", // or 'always' to create profiles for anonymous users as well,
-            session_recording: {
-                recordCrossOriginIframes: true,
-                capturePerformance: false,
-            },
-        });
-    </script>
-</body>
+            })(document, window.posthog || []);
+            posthog.init("phc_xAvL2Iq4tFmANRE7kzbKwaSqp1HJjN7x48s3vr0CMjs", {
+                api_host: "https://us.i.posthog.com",
+                person_profiles: "identified_only", // or 'always' to create profiles for anonymous users as well,
+                session_recording: {
+                    recordCrossOriginIframes: true,
+                    capturePerformance: false,
+                },
+            });
+        </script>
+    </body>
 
 </html>
