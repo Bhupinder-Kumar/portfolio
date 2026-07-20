@@ -3,6 +3,7 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import axios from "axios";
 import Lenis from "lenis";
 import { Toaster } from "sonner";
+import { SpeedInsights } from "@vercel/speed-insights/react";
 import { ThemeProvider } from "@/context/ThemeContext";
 import Portfolio from "@/components/Portfolio";
 import { getApiBaseUrl } from "@/lib/utils";
@@ -80,6 +81,7 @@ export default function App() {
             <Route path="/" element={<AppInner />} />
           </Routes>
         </BrowserRouter>
+        <SpeedInsights />
       </div>
     </ThemeProvider>
   );
