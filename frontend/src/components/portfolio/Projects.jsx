@@ -63,6 +63,18 @@ const projects = [
     image:
       "https://images.unsplash.com/photo-1639762681485-074b7f938ba0?w=1200&q=80&auto=format&fit=crop",
   },
+  {
+    n: "06",
+    title: "Outgrow Performance Dashboard",
+    year: "2026",
+    role: "Design → Code",
+    stack: ["HTML", "CSS", "JavaScript"],
+    url: "https://bhupinder-kumar.github.io/performance-page-ui/",
+    description:
+      "A responsive performance dashboard UI inspired by Outgrow, featuring performance scores, account analytics, progress metrics, improvement recommendations, and interactive dashboard sections designed for a clean and intuitive user experience.",
+    image:
+      "https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=1200&q=80&auto=format&fit=crop",
+  },
 ];
 
 export default function Projects() {
