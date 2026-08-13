@@ -51,6 +51,18 @@ const projects = [
     image:
       "https://images.unsplash.com/photo-1639762681485-074b7f938ba0?w=1200&q=80&auto=format&fit=crop",
   },
+  {
+    n: "05",
+    title: "Restaurant Food Ordering App",
+    year: "2026",
+    role: "Design → Code",
+    stack: ["HTML", "CSS", "JavaScript"],
+    url: "https://bhupinder-kumar.github.io/restroApp/",
+    description:
+      "A modern and responsive restaurant website featuring a visually engaging food menu, restaurant information, interactive sections, and a user-friendly interface designed to provide a smooth online food-ordering experience.",
+    image:
+      "https://images.unsplash.com/photo-1639762681485-074b7f938ba0?w=1200&q=80&auto=format&fit=crop",
+  },
 ];
 
 export default function Projects() {
